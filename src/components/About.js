@@ -3,7 +3,7 @@ import Smile from '../smile.png'
 import ToothIcon from '../tooth2.png'
 import styled from 'styled-components'
 
-const AboutWrapper = styled.div`
+const AboutContainer = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
   background-size: cover;
@@ -32,6 +32,14 @@ const Info = styled.div`
   h1 {
     font-size: 14px;
   }
+
+  div {
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `
 
 const Seperator = styled.div`
@@ -41,7 +49,7 @@ const Seperator = styled.div`
 
 function About() {
   return (
-    <AboutWrapper>
+    <AboutContainer>
       {/* <img alt="Hands with dental stuff" src={Whitening} /> */}
       <div>
         <h1>About E-Dent</h1>
@@ -69,7 +77,7 @@ function About() {
           <h1>Dental Work</h1>
         </div>
       </Info>
-    </AboutWrapper>
+    </AboutContainer>
   )
 }
 

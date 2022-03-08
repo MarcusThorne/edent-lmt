@@ -2,10 +2,11 @@ import React from 'react'
 import {Map, GoogleApiWrapper, Marker} from 'google-maps-react'
 
 const containerStyle = {
-  position: 'static',
-  width: '100%',
-  height: '70%',
-  overflow: "hidden"
+  position: 'absolute',
+  left: '0px',
+  height: '90%',
+  width: "45%",
+  overflow: "hidden !important",
 }
 
 function MapContainer(props) {

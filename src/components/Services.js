@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Mouth from '../mouth-piece.jpg'
-import Plaster from '../plaster.jpg'
-import Teeth from '../teeth2.jpg'
 
-const ServiceWrapper = styled.div`
+const ServiceContainer = styled.div`
   display: flex;
 
   img {
@@ -18,7 +16,7 @@ const Seperator = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: 30%;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 `
 
 const Left = styled.div`
@@ -36,11 +34,11 @@ const Right = styled.div`
   color: rgba(0,0,0,0.6);
 
   p {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   ul {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   h1 {
@@ -48,42 +46,62 @@ const Right = styled.div`
   }
 `
 
-const MiddleImg = styled.img`
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 50%;
-  right: -18%;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
-  height: 300px;
-  width: 500px !important;
+const MoreInfoContainer = styled.div`
+  width: 100%;
+  padding: 500px auto !important;
+  margin: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0,0,0,0.8);
+  background-color: #daecfa;
+  margin-bottom: 3px;
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+
+  h1 {
+    padding-top: 100px;
+    margin: 0;
+  }
+
+  p {
+    padding-bottom: 100px;
+    margin: 0;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+  }
 `
 
 function Services() {
   return (
-    <ServiceWrapper>
-      <Left>
-        <img src={Mouth} alt="" />
-        <img src={Plaster} alt="" />
-        <MiddleImg src={Teeth} alt="" />
-      </Left>
-      <Right>
-        <Seperator />
-        <h1>Our Services</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet doloremque cum, dicta odio voluptas alias quos enim aliquid beatae voluptatum nihil inventore laudantium aspernatur fuga adipisci reprehenderit sapiente possimus eligendi!</p>
-        <ul>
-          <li>Crowns (Available in porcelain, and precious metal)</li>
-          <li>Bridges</li>
-          <li>Porcelain bonded Pontic</li>
-          <li>Zirconia Bridges</li>
-          <li>Porcelain Veneer</li>
-          <li>Composite Inlay</li>
-          <li>Mouth Guards and Retainers (Available either clear or in a range of colours and patterns)</li>
-          <li>Al supplied with storage boxes</li>
-          <li>Study Models</li>
-          <li>Denture Repairs</li>
-        </ul>
-      </Right>
-    </ServiceWrapper>
+    <>
+      <ServiceContainer>
+        <Left>
+          <img src={Mouth} alt="" />
+        </Left>
+        <Right>
+          <Seperator />
+          <h1>Our Services</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet doloremque cum, dicta odio voluptas alias quos.</p>
+          <ul>
+            <li>Crowns (Available in porcelain, and precious metal)</li>
+            <li>Bridges</li>
+            <li>Porcelain bonded Pontic</li>
+            <li>Zirconia Bridges</li>
+            <li>Porcelain Veneer</li>
+            <li>Composite Inlay</li>
+            <li>Mouth Guards and Retainers (Available either clear or in a range of colours and patterns)</li>
+            <li>Al supplied with storage boxes</li>
+            <li>Study Models</li>
+            <li>Denture Repairs</li>
+          </ul>
+        </Right>
+      </ServiceContainer>
+      <MoreInfoContainer>
+        <h1>More Stuff</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam illum id praesentium repudiandae illo molestias eveniet hic cumque repellendus, perspiciatis consectetur consequatur ipsam in quod pariatur itaque at temporibus.</p>
+      </MoreInfoContainer>
+    </>
   )
 }
 

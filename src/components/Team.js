@@ -6,9 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = styled.div`
-  /* display: flex;
-  width: 100%;
-  overflow: hidden; */
   margin: 7rem 0;
   color: rgba(0,0,0,0.8);
 
@@ -20,12 +17,15 @@ const Carousel = styled.div`
   }
 `
 
-const TeamTitle = styled.h1`
+const TeamTitle = styled.div`
   font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
   margin-left: 10rem;
   font-weight: 100;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
 `
 
 const Person = styled.div`
@@ -35,6 +35,12 @@ const Person = styled.div`
   align-items: center;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  transition: 0.3s;
+  padding-top: 20px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   h1 {
     margin-bottom: 0px;
@@ -45,17 +51,24 @@ const Person = styled.div`
   }
 `
 
+const Underline = styled.span`
+  width: 40%;
+  border-bottom: 3px solid #daecfa;
+  margin-left: auto;
+`
+
 function Team() {
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
   };
 
   return (
     <Carousel>
-      <TeamTitle>Meet the Team!</TeamTitle>
+      <TeamTitle>Meet the Team!<Underline /></TeamTitle>
       <Slider {...settings}>
         <Person>
           <img src={Headshot} alt="Headshot" />

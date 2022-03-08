@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Image from '../hands.jpg'
-import LogoImg from '../logo-tooth.png'
+import LogoImg from '../logo-tooth-blue.png'
 import { FiFacebook, FiLinkedin } from 'react-icons/fi'
+import { useSpring, animated } from 'react-spring'
 
-const HeaderWrapper = styled.div`
+
+const HeaderContainer = styled.div`
   height: 100vh;
   overflow: hidden;
 `
 
-const NavWrapper = styled.div`
+const NavContainer = styled.div`
   padding: 0 50px;
   background-color: white;
   width: 100%;
@@ -27,9 +29,8 @@ const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px;
+  padding: 40px 0px;
   z-index: 50;
-  width: 90%;
 `
 
 const Button = styled.div`
@@ -37,6 +38,12 @@ const Button = styled.div`
   padding: 20px 60px !important;
   width: max-content !important;
   color: rgba(0,0,0,0.8);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #97a3ad;
+    color: white;
+  }
 `
 
 const Links = styled.div`
@@ -51,7 +58,12 @@ const Links = styled.div`
 
   h1 {
     margin: 0 20px;
-    color: rgb(50, 50, 50)
+    color: rgb(50, 50, 50);
+    transition: 0.3s;
+
+    &:hover {
+      color: #adbbc6;
+    }
   }
 `
 
@@ -73,14 +85,7 @@ const HeaderInfo = styled.div`
   background-size: cover;
   padding: 100px 180px;
   color: white;
-
-  div {
-    width: 800px;
-    /* background-color: rgba(0,0,0,0.1); */
-    border-radius: 8px;
-    padding: 20px;
-    padding-top: 100px;
-  }
+  background-position-y: ${props => props.transform};
 
   h1 {
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
@@ -90,6 +95,14 @@ const HeaderInfo = styled.div`
     font-size: 52px;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
   }
+`
+
+const HeaderText = styled.div`
+  width: 800px;
+  /* background-color: rgba(0,0,0,0.1); */
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 100px;
 `
 
 const Facebook = styled(FiFacebook)`
@@ -109,31 +122,39 @@ const Linkedin = styled(FiLinkedin)`
 `
 
 function Header() {
+  const style1 = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1000 }
+  })
+
   return (
-    <HeaderWrapper>
-      <NavWrapper>
+    <HeaderContainer>
+      <NavContainer>
         <Nav>
           <Logo src={LogoImg} />
 
           <Links>
-            <h1>Service</h1>
             <h1>About</h1>
-            <h1>Contact</h1>
+            <h1>Meet the Team</h1>
+            <h1>Service</h1>
             <h1>Contact</h1>
           </Links>
         </Nav>
-      </NavWrapper>
+      </NavContainer>
 
-      <HeaderInfo>
-        <div>
-          <h1 className='headerText'>Trusted Dental Technicians</h1>
-          <p className='headerText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <Button>Contact Us</Button>
-          <Facebook />
-          <Linkedin />
-        </div>
-      </HeaderInfo>
-    </HeaderWrapper>
+        <HeaderInfo>
+          <animated.div style={style1}>
+            <HeaderText>
+              <h1 className='headerText'>Trusted Dental Technicians</h1>
+              <p className='headerText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <Button>Contact Us</Button>
+              <Facebook />
+              <Linkedin />
+            </HeaderText>
+          </animated.div>
+        </HeaderInfo>
+    </HeaderContainer>
   )
 }
 
