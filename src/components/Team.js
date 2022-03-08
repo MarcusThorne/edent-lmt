@@ -47,7 +47,6 @@ const Person = styled.div`
 
 function Team() {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
