@@ -4,8 +4,8 @@ import {Map, GoogleApiWrapper, Marker} from 'google-maps-react'
 const containerStyle = {
   position: 'absolute',
   left: '0px',
-  height: '90%',
-  width: "45%",
+  height: '50%',
+  width: "100%",
   overflow: "hidden !important",
 }
 

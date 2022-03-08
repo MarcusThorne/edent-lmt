@@ -15,6 +15,12 @@ const AboutContainer = styled.div`
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   flex-direction: column;
+  align-items: center;
+
+p {
+  max-width: 700px;
+  margin: auto;
+}
 `
 
 const Icon = styled.img`
@@ -28,16 +34,17 @@ const Info = styled.div`
   align-items: center;
   text-align: center;
   margin-top: 70px;
+  max-width: 900px;
 
   h1 {
     font-size: 14px;
   }
 
   div {
-    transition: 0.5s;
+    transition: 0.3s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 `
@@ -45,6 +52,7 @@ const Info = styled.div`
 const Seperator = styled.div`
   border-right: 1px solid rgba(255,255,255,0.2);
   height: 90px;
+  margin: 0 80px;
 `
 
 function About() {

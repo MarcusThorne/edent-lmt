@@ -6,8 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = styled.div`
-  margin: 7rem 0;
+  margin: 7rem auto;
   color: rgba(0,0,0,0.8);
+  max-width: 1600px;
 
   img {
     border-radius: 50%;

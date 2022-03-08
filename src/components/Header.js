@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Image from '../hands.jpg'
 import LogoImg from '../logo-tooth-blue.png'
@@ -83,7 +83,7 @@ const HeaderInfo = styled.div`
   background-position: center;
   background-position-y: top;
   background-size: cover;
-  padding: 100px 180px;
+  padding: 10% 10%;
   color: white;
   background-position-y: ${props => props.transform};
 

@@ -5,24 +5,36 @@ import About from './components/About'
 import React from 'react'
 import Map from './components/Maps'
 import Team from './components/Team'
-import Services from './components/Services'
+// import Services from './components/Services'
 import './app.css'
+import Grid from './components/Grid'
+import Blank from './components/Cards'
 
 const Footer = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  margin-top: 280px;
+  margin: 80px 100px 0 100px;
   padding-bottom: 20px;
-  color: rgba(0,0,0,0.8);
+  padding-top: 20px;
+  color: rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(0,0,0,0.1);
 `
+
+// const findHeightOfMap = () => {
+//   var map = document.querySelector(".googleMap")
+//   var height = map.style.height
+//   return(height)
+// }
 
 const Contact = styled.div`
   display: flex;
   justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
   color: rgba(0,0,0,0.8);
+  margin-top: 550px;
+  margin-left: 300px;
 
   h1 {
     color: #aadaff;
@@ -44,6 +56,7 @@ const AppContainer = styled.div`
   overflow: hidden !important;
 `
 
+
 function App() {
   return (
     <AppContainer>
@@ -51,9 +64,11 @@ function App() {
       <About />
       <Team />
       {/* <Services /> */}
+      <Grid />
+      <Blank/>
 
+      <Map />
       <Contact>
-        <Map />
         <ContactInfo>
           <h1>Located in Barnstaple, <br />Devon.</h1>
           <p style={{ fontSize: '26px', color: 'rgba(0,0,0,0.6)' }}>Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Reiciendis, provident.
