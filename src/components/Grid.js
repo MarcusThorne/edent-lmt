@@ -14,6 +14,10 @@ const GridContainer = styled.div`
   overflow: hidden;
   grid-gap: 10px;
   margin: 10px;
+
+  @media(max-width: 600px) {
+      grid-template-columns: 1fr
+  }
 `
 
 const Content = styled.div`

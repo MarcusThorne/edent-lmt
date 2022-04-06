@@ -40,6 +40,10 @@ const Contact = styled.div`
     color: #aadaff;
     font-size: 40px;
   }
+
+  @media(max-width: 1400px) {
+      margin-left: 50px;
+  }
 `
 
 const ContactInfo = styled.div`
@@ -65,7 +69,6 @@ function App() {
       <Team />
       {/* <Services /> */}
       <Grid />
-      <Blank/>
 
       <Map />
       <Contact>

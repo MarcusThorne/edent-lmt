@@ -27,6 +27,11 @@ const TeamTitle = styled.div`
   display: flex;
   flex-direction: column;
   width: max-content;
+
+  @media(max-width: 500px) {
+      margin: 40px;
+      font-size: 2rem;
+  }
 `
 
 const Person = styled.div`
@@ -59,61 +64,92 @@ const Underline = styled.span`
 `
 
 function Team() {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-  };
+    const responsive = () => {
+        // repsonsive carousel with slick
+        var settings = [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
 
-  return (
-    <Carousel>
-      <TeamTitle>Meet the Team!<Underline /></TeamTitle>
-      <Slider {...settings}>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Lead Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Mid Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>CEO</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Lead Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Lead Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Lead Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-        <Person>
-          <img src={Headshot} alt="Headshot" />
-          <h1>Lead Technician</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Person>
-      </Slider>
-    </Carousel>
-  )
+        return settings
+    }
+
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: responsive()
+    };
+
+    return (
+        <Carousel>
+            <TeamTitle>Meet the Team!<Underline /></TeamTitle>
+            <Slider {...settings}>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Lead Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Mid Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>CEO</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Lead Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Lead Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Lead Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            <Person>
+                <img src={Headshot} alt="Headshot" />
+                <h1>Lead Technician</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </Person>
+            </Slider>
+        </Carousel>
+    )
 }
 
 export default Team

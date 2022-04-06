@@ -21,6 +21,10 @@ const NavContainer = styled.div`
   top: 0px;
   left: 0px;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+
+  @media(max-width: 425px) {
+    padding: 0;
+  }
 `
 
 const Nav = styled.div`
@@ -65,6 +69,10 @@ const Links = styled.div`
       color: #adbbc6;
     }
   }
+
+  @media(max-width: 425px) {
+      display: none;
+  }
 `
 
 const Logo = styled.img`
@@ -103,6 +111,14 @@ const HeaderText = styled.div`
   border-radius: 8px;
   padding: 20px;
   padding-top: 100px;
+
+  @media(max-width: 900px) {
+      width: 75%;
+
+      p {
+        font-size: 35px;
+      }
+  }
 `
 
 const Facebook = styled(FiFacebook)`
@@ -146,8 +162,8 @@ function Header() {
         <HeaderInfo>
           <animated.div style={style1}>
             <HeaderText>
-              <h1 className='headerText'>Trusted Dental Technicians</h1>
-              <p className='headerText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h1>Trusted Dental Technicians</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <Button>Contact Us</Button>
               <Facebook />
               <Linkedin />
