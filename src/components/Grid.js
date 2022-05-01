@@ -10,10 +10,9 @@ const GridContainer = styled.div`
   font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 98vw;
-  overflow: hidden;
-  grid-gap: 10px;
-  margin: 10px;
+  width: 90vw;
+  grid-gap: 40px;
+  margin: 100px auto;
 
   @media(max-width: 600px) {
       grid-template-columns: 1fr
@@ -21,7 +20,7 @@ const GridContainer = styled.div`
 `
 
 const Content = styled.div`
-  background-image: url(${props => props.image});
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url(${props => props.image});
   height: 500px;
   background-position: center;
   background-size: cover;
@@ -30,8 +29,20 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: end;
   padding-bottom: 40px;
-  color: ${props => props.color};
-  text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+  color: white;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  font-size: 16px;
+  transition: 0.3s;
+
+  &:hover {
+      p, h1 {
+        transition: 0.3s;
+          transform: scale(1.10);
+      }
+
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
+  }
 
   p, h1 {
     max-width: 50%;

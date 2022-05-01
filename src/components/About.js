@@ -9,7 +9,7 @@ function About() {
       {/* <img alt="Hands with dental stuff" src={Whitening} /> */}
       <div>
         <AboutTitle>About E-Dent</AboutTitle>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi minus voluptas cum possimus quos? Fugit provident alias, rem sint eum cumque harum, accusantium possimus quis debitis dignissimos, eveniet consequuntur optio.</p>
+              <p>E-dent is a digital laboratory keeping up with modern times, we keep our business model fresh and constantly adjust to growing technology. Our time and money are best invested in our milling machines and CAD/CAM to provide the best quality implant bars and abutments. It's important to us to not only provide our customers with the highest possible standard of product but also exceptional customer service, so we can help you crack that smile you've always wanted.</p>
       </div>
 
       <Info>

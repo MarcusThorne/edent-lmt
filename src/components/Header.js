@@ -163,7 +163,7 @@ function Header() {
           <animated.div style={style1}>
             <HeaderText>
               <h1>Trusted Dental Technicians</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Provided Quality Dental Services Since 2001!</p>
               <Button>Contact Us</Button>
               <Facebook />
               <Linkedin />
