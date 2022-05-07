@@ -43,6 +43,8 @@ const Button = styled.div`
   width: max-content !important;
   color: rgba(0,0,0,0.8);
   transition: 0.3s;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 
   &:hover {
     background-color: #97a3ad;
@@ -92,8 +94,9 @@ const HeaderInfo = styled.div`
   background-position-y: top;
   background-size: cover;
   padding: 10% 10%;
-  color: white;
   background-position-y: ${props => props.transform};
+      color: #3f3f3f;
+
 
   h1 {
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
@@ -102,6 +105,7 @@ const HeaderInfo = styled.div`
   p {
     font-size: 52px;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    color: #191919;
   }
 `
 
@@ -116,7 +120,7 @@ const HeaderText = styled.div`
       width: 75%;
 
       p {
-        font-size: 35px;
+        font-size: 40px;
       }
   }
 `
@@ -151,10 +155,10 @@ function Header() {
           <Logo src={LogoImg} />
 
           <Links>
-            <h1>About</h1>
-            <h1>Meet the Team</h1>
-            <h1>Service</h1>
-            <h1>Contact</h1>
+            <a style={{ textDecoration: "none" }} href="#About"><h1>About</h1></a>
+            <a style={{ textDecoration: "none" }} href="#Services"><h1>Services</h1></a>
+            <a style={{ textDecoration: "none" }} href="#Achievements"><h1>Achievements</h1></a>
+            <a style={{ textDecoration: "none" }} href="#Contact"><h1>Contact</h1></a>
           </Links>
         </Nav>
       </NavContainer>
@@ -165,8 +169,8 @@ function Header() {
               <h1>Trusted Dental Technicians</h1>
               <p>Provided Quality Dental Services Since 2001!</p>
               <Button>Contact Us</Button>
-              <Facebook />
-              <Linkedin />
+              <a href="https://en-gb.facebook.com/edentdentallab/"><Facebook /></a>
+              <a href="https://www.linkedin.com/company/edentlimited/about/" target="blank"><Linkedin /></a>
             </HeaderText>
           </animated.div>
         </HeaderInfo>

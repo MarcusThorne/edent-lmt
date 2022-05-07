@@ -4,7 +4,7 @@ import Header from './components/Header'
 import About from './components/About'
 import React from 'react'
 import Map from './components/Maps'
-import Team from './components/Team'
+import Team from './components/Sevices'
 // import Services from './components/Services'
 import './app.css'
 import Grid from './components/Grid'
@@ -71,10 +71,10 @@ function App() {
       <Grid />
 
       <Map />
-      <Contact>
+      <Contact id="Contact">
         <ContactInfo>
           <h1>Located in Barnstaple, <br />Devon.</h1>
-          <p style={{ fontSize: '26px', color: 'rgba(0,0,0,0.6)' }}>Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit. Reiciendis, provident.
+          <p style={{ fontSize: '26px', color: 'rgba(0,0,0,0.6)' }}>Please contact us if you'd like <br /> any further assistance!
           </p>
           <p><AiOutlinePhone /> Mobile Number - 0738324324</p>
           <p><AiOutlineMail /> Email - Edent@hotmail.com</p>

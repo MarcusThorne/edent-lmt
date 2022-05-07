@@ -56,6 +56,7 @@ export const Info = styled.div`
 
 export const AboutTitle = styled.h1`
   font-size: 50px;
+  color: #c0ddf5;
 `
 
 export const Seperator = styled.div`

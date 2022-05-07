@@ -1,12 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import Headshot from '../headshot.jpg'
+import Headshot from '../crown-bridge.jpg'
+import Dentures from '../dentures.jpg'
+import Flexi from '../flexi.jpg'
+import Implants from '../implants.jpg'
+import Attachment from '../attachment.jpg'
+import Mouthguard from '../mouthguard.jpg'
+import Cadcam from '../cad-cam.jpg'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = styled.div`
-  margin: 7rem auto;
+  margin: 7rem auto 1rem auto;
   color: rgba(0,0,0,0.8);
   max-width: 1600px;
 
@@ -15,6 +21,7 @@ const Carousel = styled.div`
     height: 120px;
     width: 120px;
     margin: 0 auto;
+    object-fit: cover;
   }
 `
 
@@ -63,6 +70,11 @@ const Underline = styled.span`
   margin-left: auto;
 `
 
+const Image = styled.img`
+  height: 40px;
+  width: 40px;
+`
+
 function Team() {
     const responsive = () => {
         // repsonsive carousel with slick
@@ -104,47 +116,42 @@ function Team() {
     };
 
     return (
-        <Carousel>
-            <TeamTitle>Meet the Team!<Underline /></TeamTitle>
+      <Carousel id="Services">
+            <TeamTitle>Our Services!<Underline /></TeamTitle>
             <Slider {...settings}>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Technician</h1>
+                <img src={Headshot} alt="Crown and Bridge" />
+                <h1>Crown and Bridge Restoration</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Lead Technician</h1>
+                <img src={Dentures} alt="Dentures" />
+                <h1>Full and Part Dentures</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Mid Technician</h1>
+                <img src={Flexi} alt="Flexi-Dentures" />
+                <h1>Flexi Dentures</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>CEO</h1>
+                <img src={Implants} alt="Implants" />
+                <h1>Implants</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Lead Technician</h1>
+                <img src={Attachment} alt="Attachment" />
+                <h1>Attachments</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Lead Technician</h1>
+                <img src={Mouthguard} alt="Mouthguard" />
+                <h1>Mouthguards</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Lead Technician</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </Person>
-            <Person>
-                <img src={Headshot} alt="Headshot" />
-                <h1>Lead Technician</h1>
+                <img src={Cadcam} alt="CAD-CAM" />
+                <h1>CAD-CAM Technology</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
             </Person>
             </Slider>
