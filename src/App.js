@@ -76,7 +76,7 @@ function App() {
           <p style={{ fontSize: '26px', color: 'rgba(0,0,0,0.6)' }}>Please contact us if you'd like <br /> any further assistance!
           </p>
           <p><AiOutlinePhone /> Mobile Number - 0738324324</p>
-          <p><AiOutlineMail /> Email - Edent@hotmail.com</p>
+          <p><AiOutlineMail /> Email - E-dent@hotmail.com</p>
         </ContactInfo>
       </Contact>
 
