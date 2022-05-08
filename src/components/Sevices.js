@@ -8,8 +8,8 @@ import Attachment from '../attachment.jpg'
 import Mouthguard from '../mouthguard.jpg'
 import Cadcam from '../cad-cam.jpg'
 import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Carousel = styled.div`
   margin: 7rem auto 1rem auto;

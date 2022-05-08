@@ -5,7 +5,6 @@ import About from './components/About'
 import React from 'react'
 import Map from './components/Maps'
 import Team from './components/Sevices'
-// import Services from './components/Services'
 import './app.css'
 import Grid from './components/Grid'
 
@@ -20,12 +19,6 @@ const Footer = styled.div`
   color: rgba(0,0,0,0.2);
   border-top: 1px solid rgba(0,0,0,0.1);
 `
-
-// const findHeightOfMap = () => {
-//   var map = document.querySelector(".googleMap")
-//   var height = map.style.height
-//   return(height)
-// }
 
 const Contact = styled.div`
   display: flex;
@@ -66,7 +59,6 @@ function App() {
       <Header />
       <About />
       <Team />
-      {/* <Services /> */}
       <Grid />
 
       <Map />
