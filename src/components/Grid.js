@@ -91,7 +91,7 @@ function Grid() {
       </Content>
       <Content image={Women} color="black">
         <h1>Quality Products, Competitive Prices</h1>
-        <p>Here at Edent we thrive on providing our customers with the utmost quality in product, while ensuring our prices are as aforable as possible. Keeping our customers smiling!</p>
+        <p>Here at Edent we thrive on providing our customers with the utmost quality in product, while ensuring our prices are as aforable as possible. We keep our customers smiling!</p>
       </Content>
     </GridContainer>
   )

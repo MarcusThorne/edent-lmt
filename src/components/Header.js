@@ -50,6 +50,10 @@ const Button = styled.div`
     background-color: #97a3ad;
     color: white;
   }
+
+  @media(max-width: 900px) {
+    display: none;
+  }
 `
 
 const Links = styled.div`
@@ -68,7 +72,7 @@ const Links = styled.div`
     transition: 0.3s;
 
     &:hover {
-      color: #adbbc6;
+      color: rgb(50, 50, 50);
     }
   }
 
@@ -95,7 +99,7 @@ const HeaderInfo = styled.div`
   background-size: cover;
   padding: 10% 10%;
   background-position-y: ${props => props.transform};
-      color: #3f3f3f;
+  color: rgb(50,50,50);
 
 
   h1 {
@@ -105,7 +109,7 @@ const HeaderInfo = styled.div`
   p {
     font-size: 52px;
     text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
-    color: #191919;
+    color: #3f3f3f;
   }
 `
 
@@ -167,8 +171,8 @@ function Header() {
           <animated.div style={style1}>
             <HeaderText>
               <h1>Trusted Dental Technicians</h1>
-              <p>Provided Quality Dental Services Since 2001!</p>
-              <Button>Contact Us</Button>
+              <p>Providing Quality Dental Services Since 2001!</p>
+              <a style={{textDecoration: "none"}} href="#Contact"><Button>Contact Us</Button></a>
               <a href="https://en-gb.facebook.com/edentdentallab/"><Facebook /></a>
               <a href="https://www.linkedin.com/company/edentlimited/about/" target="blank"><Linkedin /></a>
             </HeaderText>

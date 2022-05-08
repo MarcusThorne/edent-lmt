@@ -4,7 +4,6 @@ import ToothIcon from '../tooth2.png'
 import Teeth from '../teeth-cartoon.png'
 import Quality from '../quality.png'
 import { AboutContainer, Icon, Info, AboutTitle, Seperator } from '../styles/AboutStyle'
-import styled from 'styled-components'
 
 function About() {
   return (
