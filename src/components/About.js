@@ -23,7 +23,7 @@ function About() {
         <Seperator />
         <div>
           <Icon src={ToothIcon} />
-          <h1>Building Implant</h1>
+          <h1>Building Implants</h1>
         </div>
         <Seperator />
         <div>
