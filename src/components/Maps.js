@@ -7,7 +7,7 @@ const containerStyle = {
   height: '50%',
   width: "100%",
   overflow: "hidden !important",
-  boxShadow: "2px 2px 10px rgba(0,0,0,0.2)",
+  boxShadow: "2px 2px 10px rgba(0,0,0,0.1)",
 }
 
 function MapContainer(props) {
