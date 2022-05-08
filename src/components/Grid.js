@@ -83,7 +83,7 @@ function Grid() {
       <Content image={Fillin} color="white">
         <h1>DAMAS accredited!</h1>
         <p>We are now DAMAS accredited!!! DAMAS is the ‘Dental Appliance Manufacturers Audit Scheme’. It is a quality management system designed specifically for the manufacturers of custom made dental appliances.</p>
-        <DAMAS href="https://www.damas.co.uk/about-damas/">Take a Look</DAMAS>
+        <DAMAS href="https://www.damas.co.uk/about-damas/" target="_blank">Take a Look</DAMAS>
       </Content>
       <Content image={Tube} color="white">
         <h1>Modern and Advanced Technology</h1>
