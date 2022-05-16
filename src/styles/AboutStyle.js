@@ -35,7 +35,7 @@ export const Info = styled.div`
   align-items: center;
   text-align: center;
   margin-top: 150px;
-  max-width: 900px;
+  max-width: 1200px;
 
   h1 {
     font-size: 14px;
@@ -56,7 +56,7 @@ export const Info = styled.div`
 
 export const AboutTitle = styled.h1`
   font-size: 50px;
-  color: #c0ddf5;
+  color: rgba(34, 204, 199, 0.5);
 `
 
 export const Seperator = styled.div`

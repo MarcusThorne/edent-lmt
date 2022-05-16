@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Mirror from '../mirror.jpg'
-import Fillin from '../fillin.jpg'
-import Tube from '../tube.jpg'
+import Milling from '../milling.jpg'
+import Prosthetics from '../prosthetics.jpg'
+// import Tube from '../tube.jpg'
 import Women from '../smile-women.jpg'
+import Smiling from '../people-smiling.jpg'
 
 const GridContainer = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
@@ -54,40 +55,45 @@ const Content = styled.div`
   }
 
   p, h1 {
-    max-width: 50%;
+    max-width: 80%;
     margin: 10px auto;
+
+    @media(min-width: 800px) {
+      max-width: 50%;
+    }
   }
 `
 
-const DAMAS = styled.a`
-  position: absolute;
-  right: 0;
-  padding-right: 20px;
-  background-color: #c3ddf5;
-  padding: 10px;
-  color: rgb(100,100,100);
-  border-radius: 4px 0 0 4px;
-  text-decoration: none;
-  font-size: 14px;
-      top: 40px;
+// const DAMAS = styled.a`
+//   position: absolute;
+//   right: 0;
+//   padding-right: 20px;
+//   background-color: #c3ddf5;
+//   padding: 10px;
+//   color: rgb(100,100,100);
+//   border-radius: 4px 0 0 4px;
+//   text-decoration: none;
+//   font-size: 14px;
+//       top: 40px;
 
-`
+// `
 
 function Grid() {
   return (
     <GridContainer id="Achievements">
-      <Content image={Mirror} color="black">
-        <h1>Emergency Repair</h1>
-        <p>We provide a quality emergency denture repair service. In the case of emergency you will be asked to either post the denture to us or put it through our letterbox. We have a combination lock outside our Laboratory for you to collect at your convenience.</p>
+      <Content image={Smiling} color="black">
+        <h1>Denture Repair Service</h1>
+        <p>We provide a same day denture repair service direct to the public,
+          Appointments are not always necessary, call 01271 327383</p>
       </Content>
-      <Content image={Fillin} color="white">
-        <h1>DAMAS accredited!</h1>
-        <p>We are now DAMAS accredited!!! DAMAS is the ‘Dental Appliance Manufacturers Audit Scheme’. It is a quality management system designed specifically for the manufacturers of custom made dental appliances.</p>
-        <DAMAS href="https://www.damas.co.uk/about-damas/" target="_blank">Take a Look</DAMAS>
+      <Content image={Milling} color="white">
+        <h1>Advanced Technology</h1>
+        <p>We accept all types of intraoral scan files in a STL format and with our scanner, provide a variety of restorations. Metal and metal free crown and bridge, partial dentures, flexi dentures, implants, orthodontic aligners. We produce 3D printed models, which combined, give accurate and consistent results.</p>
+        {/* <DAMAS href="https://www.damas.co.uk/about-damas/" target="_blank">Take a Look</DAMAS> */}
       </Content>
-      <Content image={Tube} color="white">
-        <h1>Modern and Advanced Technology</h1>
-        <p>Our wide range of technology allows us to provide a variety of services such as Crown and bridge restoration, Full and part dentures, Flexi dentures, Implants, Attachments, Mouthguards, CAD-CAM technology.</p>
+      <Content image={Prosthetics} color="white">
+        <h1>Prosthetics</h1>
+        <p>We work closely alongside our surgeons using all the best materials, to make functional and aesthetically pleasing dentures for the patient.</p>
       </Content>
       <Content image={Women} color="black">
         <h1>Quality Products, Competitive Prices</h1>

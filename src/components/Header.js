@@ -72,18 +72,19 @@ const Links = styled.div`
     transition: 0.3s;
 
     &:hover {
-      color: rgb(50, 50, 50);
+      color: #1ca6a2;
     }
   }
 
-  @media(max-width: 425px) {
+  @media(max-width: 750px) {
       display: none;
   }
 `
 
 const Logo = styled.img`
-  height: 40px;
+  height: 60px;
   margin-left: 40px;
+  width: 120px;
 `
 
 const HeaderInfo = styled.div`
@@ -95,6 +96,7 @@ const HeaderInfo = styled.div`
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-position-y: top;
   background-size: cover;
   padding: 10% 10%;
@@ -103,13 +105,14 @@ const HeaderInfo = styled.div`
 
 
   h1 {
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.3);
   }
 
   p {
     font-size: 52px;
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
-    color: #3f3f3f;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.3);
+    color: #323232;
+    font-weight: 700;
   }
 `
 
@@ -119,12 +122,17 @@ const HeaderText = styled.div`
   border-radius: 8px;
   padding: 20px;
   padding-top: 100px;
+  text-shadow: 2px 2px 10px white;
 
   @media(max-width: 900px) {
       width: 75%;
 
       p {
-        font-size: 40px;
+        font-size: 34px;
+      }
+
+      h1 {
+        font-size: 28px
       }
   }
 `

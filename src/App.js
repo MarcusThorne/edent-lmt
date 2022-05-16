@@ -29,7 +29,7 @@ const Contact = styled.div`
   margin-left: 300px;
 
   h1 {
-    color: #aadaff;
+    color: rgba(34, 204, 199, 0.5);
     font-size: 40px;
   }
 
@@ -67,8 +67,8 @@ function App() {
           <h1>Located in Barnstaple, <br />Devon.</h1>
           <p style={{ fontSize: '26px', color: 'rgba(0,0,0,0.6)' }}>Please contact us if you'd like <br /> any further assistance!
           </p>
-          <p><AiOutlinePhone /> Mobile Number - 0738324324</p>
-          <p><AiOutlineMail /> Email - E-dent@hotmail.com</p>
+          <p><AiOutlinePhone /> Mobile Number: 0738324324</p>
+          <p><AiOutlineMail /> Email: E-dent@hotmail.com</p>
         </ContactInfo>
       </Contact>
 

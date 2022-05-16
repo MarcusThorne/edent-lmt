@@ -3,6 +3,7 @@ import Smile from '../smile.png'
 import ToothIcon from '../tooth2.png'
 import Teeth from '../teeth-cartoon.png'
 import Quality from '../quality.png'
+import Tech from '../tech.png'
 import { AboutContainer, Icon, Info, AboutTitle, Seperator } from '../styles/AboutStyle'
 
 function About() {
@@ -11,28 +12,33 @@ function About() {
       <div>
         <div>
           <AboutTitle>About E-Dent</AboutTitle>
-          <p>E-dent is a digital laboratory keeping up with modern times, we keep our business model fresh and constantly adjust to growing technology. Our time and money are best invested in our milling machines and CAD/CAM to provide the best quality implant bars and abutments. It's important to us to not only provide our customers with the highest possible standard of product but also exceptional customer service, so we can help you crack that smile you've always wanted.</p>
+          <p style={{fontSize: "20px"}}>Edent is a full service Dental Laboratory. We use traditional techniques alongside Digital technology. This allows us to use the latest materials, giving accuracy and consistency at competitive prices.</p>
         </div>
       </div>
 
       <Info>
         <div>
-          <Icon src={Smile} />
-          <h1>Improving Smiles</h1>
+          <Icon style={{ objectFit: "contain" }} src={Smile} />
+          <h1>Orthodontic aligners</h1>
         </div>
         <Seperator />
         <div>
           <Icon src={ToothIcon} />
-          <h1>Building Implants</h1>
+          <h1>Creating Proshetics</h1>
         </div>
         <Seperator />
         <div>
           <Icon src={Teeth} />
-          <h1>Creating Prosthetics</h1>
+          <h1>Crown and Bridge</h1>
         </div>
         <Seperator />
         <div>
-          <Icon style={{objectFit: "cover"}} src={Quality} />
+          <Icon style={{objectFit: "cover"}} src={Tech} />
+          <h1>CAD CAM Technology</h1>
+        </div>
+        <Seperator />
+        <div>
+          <Icon style={{ objectFit: "cover" }} src={Quality} />
           <h1>Providing Quality</h1>
         </div>
       </Info>
