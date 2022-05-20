@@ -127,12 +127,12 @@ function Team() {
             </Person>
             <Person>
                 <img src={FullDentures} alt="Dentures" />
-                <h1>Full and Partial Dentures</h1>
+                <h1>Full and Partial <br/> Dentures</h1>
 
             </Person>
             <Person>
                 <img src={Dentures} alt="Flexi-Dentures" />
-                <h1>Crown and Bridge Restoration's</h1>
+                <h1>Crown and Bridge Restoration</h1>
 
             </Person>
             <Person>
@@ -162,7 +162,7 @@ function Team() {
             </Person>
             <Person>
               <img src={ChromeCastings} alt="Chrome castings" />
-              <h1>Chrome Casting's</h1>
+              <h1>Chrome Casting</h1>
 
             </Person>
             </Slider>

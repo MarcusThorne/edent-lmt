@@ -77,13 +77,13 @@ const DAMAS = styled.a`
   position: absolute;
   right: 0;
   padding-right: 20px;
-  background-color: #c3ddf5;
+  background-color: #0154a4;
   padding: 10px;
-  color: white;
+  color: rgba(255,255,255,0.7);
   border-radius: 4px 0 0 4px;
   text-decoration: none;
   font-size: 14px;
-      bottom: 80px;
+  top: 40px;
 
 `
 
