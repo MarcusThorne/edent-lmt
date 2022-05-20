@@ -73,19 +73,19 @@ const Content = styled.div`
   }
 `
 
-// const DAMAS = styled.a`
-//   position: absolute;
-//   right: 0;
-//   padding-right: 20px;
-//   background-color: #c3ddf5;
-//   padding: 10px;
-//   color: rgb(100,100,100);
-//   border-radius: 4px 0 0 4px;
-//   text-decoration: none;
-//   font-size: 14px;
-//       top: 40px;
+const DAMAS = styled.a`
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  background-color: #c3ddf5;
+  padding: 10px;
+  color: white;
+  border-radius: 4px 0 0 4px;
+  text-decoration: none;
+  font-size: 14px;
+      bottom: 80px;
 
-// `
+`
 
 function Grid() {
   return (
@@ -108,6 +108,7 @@ function Grid() {
         <DLA src={DLALogo} />
         <h1>The Dental Laboratories Association</h1>
         <p>The Dental Laboratories Association Ltd (DLA) is a professional body for dental laboratory owners in the UK.</p>
+        <DAMAS href="https://dla.org.uk/" target="blank">Check It Out!</DAMAS>
       </Content>
     </GridContainer>
   )
