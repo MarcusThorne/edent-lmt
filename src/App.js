@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { AiOutlineCopyrightCircle, AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineCopyrightCircle, AiOutlinePhone, AiOutlineMail, AiOutlineMobile } from 'react-icons/ai'
+import { FaRegAddressBook } from 'react-icons/fa'
 import Header from './components/Header'
 import About from './components/About'
 import React from 'react'
@@ -67,8 +68,9 @@ function App() {
           <h1>Located in Barnstaple, <br />Devon.</h1>
           <p style={{ fontSize: '26px', color: 'rgba(0,0,0,0.6)' }}>Please contact us if you'd like <br /> any further assistance!
           </p>
-          <p><AiOutlinePhone /> Mobile Number: 0738324324</p>
-          <p><AiOutlineMail /> Email: E-dent@hotmail.com</p>
+          <p><FaRegAddressBook /> Address: Unit 4 Abbey Road EX31 1JU </p>
+          <p><AiOutlinePhone /> Phone Number: 01271327383 <br /><AiOutlineMobile /> Mobile Number (<b>Out of Hours Emergeny Only</b>): 07837201431</p>
+          <p><AiOutlineMail /> Email: e-dent@hotmail.co.uk</p>
         </ContactInfo>
       </Contact>
 

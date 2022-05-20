@@ -19,16 +19,16 @@ function About() {
       <Info>
         <div>
           <Icon style={{ objectFit: "contain" }} src={Smile} />
-          <h1>Orthodontic aligners</h1>
-        </div>
-        <Seperator />
-        <div>
-          <Icon src={ToothIcon} />
-          <h1>Creating Proshetics</h1>
+          <h1>Orthodontic Aligners</h1>
         </div>
         <Seperator />
         <div>
           <Icon src={Teeth} />
+          <h1>Creating Proshetics</h1>
+        </div>
+        <Seperator />
+        <div>
+          <Icon src={ToothIcon} />
           <h1>Crown and Bridge</h1>
         </div>
         <Seperator />

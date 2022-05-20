@@ -6,10 +6,11 @@ import FullDentures from '../full-dentures.jpg'
 // import Flexi from '../flexi.jpg'
 import Implants from '../implants.jpg'
 import Attachment from '../attachment.jpg'
-import Mouthguard from '../mouthguard.jpg'
+import Gumshield from '../gumshield.jpg'
 import Smiling from '../people-smiling.jpg'
 import Cadcam from '../cad-cam.jpg'
 import Argen from '../argen.jpg'
+import ChromeCastings from '../chrome-castings.jpg'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -53,6 +54,7 @@ const Person = styled.div`
   text-align: center;
   transition: 0.3s;
   padding-top: 20px;
+  color: rgba(0,0,0,0.7);
 
   &:hover {
     transform: scale(1.1);
@@ -60,6 +62,11 @@ const Person = styled.div`
 
   h1 {
     margin-bottom: 50px;
+    font-weight: 400;
+  }
+
+  img {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
   }
 `
 
@@ -67,11 +74,6 @@ const Underline = styled.span`
   width: 40%;
   border-bottom: 3px solid #1ca6a2;
   margin-left: auto;
-`
-
-const Image = styled.img`
-  height: 40px;
-  width: 40px;
 `
 
 function Team() {
@@ -154,12 +156,12 @@ function Team() {
 
             </Person>
             <Person>
-              <img src={Mouthguard} alt="Mouthguards" />
+            <img src={Gumshield} style={{ objectPosition: "left" }} alt="Mouthguards" />
               <h1>Mouthguards</h1>
 
             </Person>
             <Person>
-              <img src={Cadcam} alt="CAD-CAM" />
+              <img src={ChromeCastings} alt="Chrome castings" />
               <h1>Chrome Casting's</h1>
 
             </Person>

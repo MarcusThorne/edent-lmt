@@ -5,6 +5,7 @@ import Prosthetics from '../prosthetics.jpg'
 // import Tube from '../tube.jpg'
 import Women from '../smile-women.jpg'
 import Smiling from '../people-smiling.jpg'
+import DLALogo from '../DLA-logo.png'
 
 const GridContainer = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
@@ -26,6 +27,14 @@ const GridContainer = styled.div`
         font-size: 14px;
       }
   }
+`
+
+const DLA = styled.img`
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 80px;
+  width: 120px;
 `
 
 const Content = styled.div`
@@ -96,8 +105,9 @@ function Grid() {
         <p>We work closely alongside our surgeons using all the best materials, to make functional and aesthetically pleasing dentures for the patient.</p>
       </Content>
       <Content image={Women} color="black">
-        <h1>Quality Products, Competitive Prices</h1>
-        <p>Here at Edent we thrive on providing our customers with the utmost quality in product, while ensuring our prices are as aforable as possible. We keep our customers smiling!</p>
+        <DLA src={DLALogo} />
+        <h1>The Dental Laboratories Association</h1>
+        <p>The Dental Laboratories Association Ltd (DLA) is a professional body for dental laboratory owners in the UK.</p>
       </Content>
     </GridContainer>
   )

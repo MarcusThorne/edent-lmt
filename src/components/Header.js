@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from '../hands.jpg'
 import LogoImg from '../logo-tooth-blue.png'
+import LogoTransparent from '../logo-transparent.png'
 import { FiFacebook, FiLinkedin } from 'react-icons/fi'
 import { useSpring, animated } from 'react-spring'
 
@@ -47,7 +48,7 @@ const Button = styled.div`
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 
   &:hover {
-    background-color: #97a3ad;
+    background-color: #1da7a3;
     color: white;
   }
 
@@ -68,7 +69,7 @@ const Links = styled.div`
 
   h1 {
     margin: 0 20px;
-    color: rgb(50, 50, 50);
+    color: rgba(50, 50, 50, 0.9);
     transition: 0.3s;
 
     &:hover {
@@ -87,12 +88,37 @@ const Logo = styled.img`
   width: 120px;
 `
 
+const LogoHeader = styled.img`
+  position: absolute;
+  width: 900px;
+  z-index: -1;
+  top: 50%;
+    height: 400px;
+    transform: translate(50%, -0%);
+    right: -140px;
+    transition: 0.5s;
+    opacity: 0.5;
+
+  @media(min-width: 501px) {
+    right: 100px;
+    transform: translate(50%, -0%);
+        height: 400px;
+  }
+
+  @media(min-width: 1280px) {
+      height: 500px;
+  transform: translate(50%, -40%);
+  right: 200px;
+
+  }
+`
+
 const HeaderInfo = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
   font-family: 'Open Sans', sans-serif;
-  background-image: url(${Image});
-  background-color: black;
+  /* background-image: url(${Image}); */
+  background-color: rgba(34, 204, 199, 0.3);
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,18 +127,25 @@ const HeaderInfo = styled.div`
   background-size: cover;
   padding: 10% 10%;
   background-position-y: ${props => props.transform};
-  color: rgb(50,50,50);
-
+  color: rgba(50,50,50, 0.9);
+  position: relative;
 
   h1 {
     text-shadow: 0px 0px 10px rgba(255,255,255,0.3);
+    font-weight: 400;
   }
 
   p {
     font-size: 52px;
     text-shadow: 0px 0px 10px rgba(255,255,255,0.3);
-    color: #323232;
+    color: rgba(50,50,50, 0.9);
     font-weight: 700;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+    }
   }
 `
 
@@ -177,9 +210,10 @@ function Header() {
 
         <HeaderInfo>
           <animated.div style={style1}>
+            <LogoHeader src={LogoTransparent} />
             <HeaderText>
               <h1>Trusted Dental Technicians</h1>
-              <p>Providing Quality Dental Services Since 2001!</p>
+              <p>Providing Quality Dental Services!</p>
               <a style={{textDecoration: "none"}} href="#Contact"><Button>Contact Us</Button></a>
               <a href="https://en-gb.facebook.com/edentdentallab/"><Facebook /></a>
               <a href="https://www.linkedin.com/company/edentlimited/about/" target="blank"><Linkedin /></a>
