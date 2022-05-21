@@ -94,7 +94,7 @@ const LogoHeader = styled.img`
   z-index: -1;
   top: 50%;
     height: 400px;
-    transform: translate(50%, -10%);
+    transform: translate(50%, -18%);
     right: -140px;
     transition: 0.5s;
     opacity: 0.5;
