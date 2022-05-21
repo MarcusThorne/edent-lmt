@@ -97,7 +97,7 @@ const LogoHeader = styled.img`
     transform: translate(50%, -18%);
     right: -140px;
     transition: 0.5s;
-    opacity: 0.5;
+    opacity: 0.25;
 
   @media(min-width: 501px) {
     right: 100px;
@@ -107,7 +107,7 @@ const LogoHeader = styled.img`
   @media(min-width: 1280px) {
       height: 500px;
   transform: translate(50%, -40%);
-  right: 200px;
+  right: 250px;
 
   }
 `
@@ -139,12 +139,6 @@ const HeaderInfo = styled.div`
     text-shadow: 0px 0px 10px rgba(255,255,255,0.3);
     color: rgba(50,50,50, 0.9);
     font-weight: 700;
-  }
-
-  &:hover {
-    img {
-      opacity: 1;
-    }
   }
 `
 
