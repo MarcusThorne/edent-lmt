@@ -28,5 +28,5 @@ function MapContainer(props) {
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.API_URL
+  apiKey: process.env.REACT_APP_API_URL
 })(MapContainer)
